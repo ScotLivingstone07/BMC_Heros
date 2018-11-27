@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Users>
+  <User>
+    <UserName>john</UserName>
+    <Roles>Members</Roles>
+  </User>
+  <User>
+    <UserName>paul</UserName>
+    <Roles>Members,Administrators</Roles>
+  </User>
+  <User>
+    <UserName>george</UserName>
+    <Roles>Members,Administrators</Roles>
+  </User>
+  <User>
+    <UserName>ringo</UserName>
+    <Roles>Members</Roles>
+  </User>
+</Users>

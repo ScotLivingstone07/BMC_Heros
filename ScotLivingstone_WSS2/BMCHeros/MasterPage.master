@@ -1,0 +1,84 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+     <link href="Styles/StyleSheet.css" rel="stylesheet" />           
+      
+
+</head>
+<body>
+    
+    <form id="form1" runat="server">
+        <div id="Container">
+        <asp:LoginStatus ID="LoginStatus1" runat="server" />
+    
+     <div id="Banner">
+      
+        
+            <asp:Image ID="Image1" runat="server" Height="139px" ImageUrl="~/Images/SuperHeroBanner.jpg" Width="1003px" />
+        
+     </div>
+     <div id="Nav">
+       
+               <asp:HyperLink ID="Home" NavigateUrl="~/index.aspx" runat="server">Home</asp:HyperLink>
+             <br />
+            <asp:HyperLink ID="Login" NavigateUrl="~/Login.aspx" runat="server">Login   </asp:HyperLink>
+             <br />
+            <asp:HyperLink ID="Feedback" NavigateUrl="~/feedback.aspx" runat="server">Feedback</asp:HyperLink>
+             <br />
+            <asp:HyperLink ID="Blog" NavigateUrl="~/blog.aspx" runat="server">Blog</asp:HyperLink>
+             <br />
+            <asp:HyperLink ID="ErrorLog" NavigateUrl="~/Admin/log.aspx" runat="server">Error Log</asp:HyperLink>
+             <br />
+            <asp:HyperLink ID="Stats" NavigateUrl="~/Admin/stats.aspx" runat="server">Stats</asp:HyperLink>
+             <br />
+            <asp:HyperLink ID="ReviewFeedback" NavigateUrl="~/Admin/reviewFeedback.aspx" runat="server">Review Feedback</asp:HyperLink>
+             <br />
+           <asp:HyperLink ID="EditIndex" NavigateUrl="~/Admin/editIndex.aspx" runat="server">Edit Index</asp:HyperLink>
+             <br />
+            <asp:HyperLink ID="EditBlog" NavigateUrl="~/Members/editBlog.aspx" runat="server">Edit Blog</asp:HyperLink>
+             <br />
+         
+     </div>
+     <div id="Content">
+          <asp:ContentPlaceHolder ID="Title" runat="server">
+
+
+              <asp:Label ID="lblTitle" runat="server" BackColor="#7B7B80" Font-Bold="True" Font-Size="X-Large" ForeColor="White" Text="Title" Width="843px"></asp:Label>
+
+
+         </asp:ContentPlaceHolder>
+         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+
+
+
+
+
+
+
+
+
+
+        </asp:ContentPlaceHolder>
+
+     </div> 
+     <div id="Footer">
+      
+         
+      
+         <asp:Button ID="btnBrowser" runat="server" Text="Browser" />
+         <asp:TextBox ID="TextBox1" runat="server" Height="46px" Width="892px"></asp:TextBox>
+      
+         
+      
+     </div>
+    </div>
+    </form>
+</body>
+</html>
